@@ -1,0 +1,13 @@
+Demo talking points (for your interview):
+- This is a MERN-style chatbot demo: React frontend + Express backend + MongoDB for persistence.
+- The backend stores every user and bot message in MongoDB (Message model).
+- For production AI:
+  1. Replace placeholder generateAIResponse with API calls to OpenAI (or other LLM) using server-side API key.
+  2. Add authentication & rate limits.
+  3. Use embeddings + vector DB for long-term memory and retrieval-augmented generation.
+  4. Consider message size limits, content filtering and monitoring.
+- To run locally:
+  1. Start MongoDB locally (or use Atlas) and set MONGO_URI in `.env`.
+  2. `cd backend` → `npm install` → `node server.js`
+  3. `cd frontend` → `npm install` → `npm start`
+  4. Frontend requests `/api/chat` which will save messages to MongoDB. You can view history at GET `/api/history`.

@@ -1,0 +1,1 @@
+This is a basic Create-React-App style frontend. Proxy to backend by ensuring dev server proxies '/api' requests to http://localhost:5000.
